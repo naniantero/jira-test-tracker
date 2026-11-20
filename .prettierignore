@@ -1,0 +1,5 @@
+package-lock.json
+drizzle/
+src/lib/db/schemas/auth-*.ts
+docs/superpowers/
+tests/fixtures/files/

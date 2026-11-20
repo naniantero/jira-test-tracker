@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "group": {
+    "key": "PROJ-3",
+    "title": "Checkout flow"
+  },
+  "cases": [
+    {
+      "key": "PROJ-301",
+      "title": "Checkout step 01",
+      "description": "Checkout step 01 works end to end."
+    },
+    {
+      "key": "PROJ-302",
+      "title": "Checkout step 02",
+      "description": "Checkout step 02 works end to end."
+    },
+    {
+      "key": "PROJ-303",
+      "title": "Checkout step 03",
+      "description": "Checkout step 03 works end to end."
+    },
+    {
+      "key": "PROJ-304",
+      "title": "Checkout step 04",
+      "description": "Checkout step 04 works end to end."
+    },
+    {
+      "key": "PROJ-305",
+      "title": "Checkout step 05",
+      "description": "Checkout step 05 works end to end."
+    },
+    {
+      "key": "PROJ-306",
+      "title": "Checkout step 06",
+      "description": "Checkout step 06 works end to end."
+    },
+    {
+      "key": "PROJ-307",
+      "title": "Checkout step 07",
+      "description": "Checkout step 07 works end to end."
+    },
+    {
+      "key": "PROJ-308",
+      "title": "Checkout step 08",
+      "description": "Checkout step 08 works end to end."
+    },
+    {
+      "key": "PROJ-309",
+      "title": "Checkout step 09",
+      "description": "Checkout step 09 works end to end."
+    },
+    {
+      "key": "PROJ-310",
+      "title": "Checkout step 10",
+      "description": "Checkout step 10 works end to end."
+    },
+    {
+      "key": "PROJ-311",
+      "title": "Checkout step 11",
+      "description": "Checkout step 11 works end to end."
+    },
+    {
+      "key": "PROJ-312",
+      "title": "Checkout step 12",
+      "description": "Checkout step 12 works end to end."
+    },
+    {
+      "key": "PROJ-313",
+      "title": "Checkout step 13",
+      "description": "Checkout step 13 works end to end."
+    },
+    {
+      "key": "PROJ-314",
+      "title": "Checkout step 14",
+      "description": "Checkout step 14 works end to end."
+    },
+    {
+      "key": "PROJ-315",
+      "title": "Checkout step 15",
+      "description": "Checkout step 15 works end to end."
+    },
+    {
+      "key": "PROJ-316",
+      "title": "Checkout step 16",
+      "description": "Checkout step 16 works end to end."
+    },
+    {
+      "key": "PROJ-317",
+      "title": "Checkout step 17",
+      "description": "Checkout step 17 works end to end."
+    },
+    {
+      "key": "PROJ-318",
+      "title": "Checkout step 18",
+      "description": "Checkout step 18 works end to end."
+    },
+    {
+      "key": "PROJ-319",
+      "title": "Checkout step 19",
+      "description": "Checkout step 19 works end to end."
+    },
+    {
+      "key": "PROJ-320",
+      "title": "Checkout step 20",
+      "description": "Checkout step 20 works end to end."
+    },
+    {
+      "key": "PROJ-321",
+      "title": "Checkout step 21",
+      "description": "Checkout step 21 works end to end."
+    },
+    {
+      "key": "PROJ-322",
+      "title": "Checkout step 22",
+      "description": "Checkout step 22 works end to end."
+    },
+    {
+      "key": "PROJ-323",
+      "title": "Checkout step 23",
+      "description": "Checkout step 23 works end to end."
+    },
+    {
+      "key": "PROJ-324",
+      "title": "Checkout step 24",
+      "description": "Checkout step 24 works end to end."
+    },
+    {
+      "key": "PROJ-325",
+      "title": "Checkout step 25",
+      "description": "Checkout step 25 works end to end."
+    },
+    {
+      "key": "PROJ-326",
+      "title": "Checkout step 26",
+      "description": "Checkout step 26 works end to end."
+    },
+    {
+      "key": "PROJ-327",
+      "title": "Checkout step 27",
+      "description": "Checkout step 27 works end to end."
+    },
+    {
+      "key": "PROJ-328",
+      "title": "Checkout step 28",
+      "description": "Checkout step 28 works end to end."
+    },
+    {
+      "key": "PROJ-329",
+      "title": "Checkout step 29",
+      "description": "Checkout step 29 works end to end."
+    },
+    {
+      "key": "PROJ-330",
+      "title": "Checkout step 30",
+      "description": "Checkout step 30 works end to end."
+    }
+  ]
+}

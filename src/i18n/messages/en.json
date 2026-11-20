@@ -1,0 +1,217 @@
+{
+  "app": {
+    "name": "Test Tracker",
+    "description": "Track which test cases have been tested and what still needs attention."
+  },
+  "header": {
+    "tested": "tested"
+  },
+  "userMenu": {
+    "admin": "Admin",
+    "tester": "Tester",
+    "signOut": "Sign out",
+    "signOutFailed": "Could not sign out. Try again."
+  },
+  "adminNav": {
+    "label": "Admin",
+    "cases": "Test cases",
+    "users": "Users"
+  },
+  "login": {
+    "title": "Sign in · Test Tracker",
+    "heading": "Sign in",
+    "description": "Use the username and password you received for testing.",
+    "username": "Username",
+    "password": "Password",
+    "submit": "Sign in",
+    "invalid": "Invalid username or password.",
+    "rateLimited": "Too many attempts. Try again in a minute.",
+    "unavailable": "Something went wrong. Try again."
+  },
+  "tree": {
+    "empty": "Nothing to test yet.",
+    "emptyView": "No stories in this view.",
+    "tabs": {
+      "all": "All ({count})",
+      "untested": "Untested ({count})",
+      "issues": "Issues ({count})",
+      "retest": "Retest ({count})"
+    },
+    "testedCount": "{tested}/{total} tested",
+    "pagesLabel": "{epic} pages",
+    "previousPage": "Go to previous page",
+    "previous": "Previous",
+    "nextPage": "Go to next page",
+    "next": "Next",
+    "goToPage": "Go to page {page}"
+  },
+  "status": {
+    "untested": "Untested",
+    "passed": "Passed",
+    "failed": "Issue",
+    "retest": "Ready for retest",
+    "withDate": "{status} · {date}",
+    "change": "Change status of {key}: {status}",
+    "progress": "{tested} of {total} tested"
+  },
+  "story": {
+    "loading": "Loading story…",
+    "notFound": "Story not found.",
+    "notFoundDescription": "It may have been removed from the test set.",
+    "reference": "Reference",
+    "changedBy": "by {name}",
+    "description": "Description",
+    "criteria": "Acceptance criteria",
+    "noDescription": "No description.",
+    "saveFailed": "Could not save. Check your connection and try again.",
+    "epicComplete": "Epic complete: {title} 🎉"
+  },
+  "changed": {
+    "tab": "Changed ({count})",
+    "sinceTested": "Changed since tested",
+    "on": "Changed on {date} since it was tested.",
+    "sendToRetest": "Send to retest",
+    "keepStatus": "Keep status",
+    "comment": "Content changed since it was tested."
+  },
+  "actions": {
+    "targets": {
+      "passed": "Works",
+      "failed": "Report issue…",
+      "retest": "Mark as fixed",
+      "untested": "Reset to untested"
+    },
+    "headings": {
+      "passed": "Works",
+      "failed": "Report issue",
+      "retest": "Mark as fixed",
+      "untested": "Reset to untested"
+    },
+    "placeholders": {
+      "passed": "What made you change your mind?",
+      "failed": "What went wrong? What did you do, what did you expect?",
+      "retest": "What was fixed? (optional)",
+      "untested": "Why reset this story?"
+    },
+    "more": "More",
+    "writeCommentOrFile": "Write a comment or attach a file.",
+    "writeComment": "Write a comment."
+  },
+  "comment": {
+    "add": "Add a comment",
+    "required": "Comment required",
+    "label": "Comment",
+    "placeholder": "Add a comment…",
+    "placeholderWithPaste": "Add a comment… Paste screenshots with Ctrl/Cmd+V.",
+    "cancel": "Cancel",
+    "submit": "Comment",
+    "pastedImage": "Pasted image {n}"
+  },
+  "attachments": {
+    "list": "Attachments",
+    "remove": "Remove {name}",
+    "input": "Attach files",
+    "attach": "Attach files",
+    "hint": "or paste / drop screenshots · up to {max} files, 10 MB each",
+    "open": "Open {name}",
+    "openOriginal": "Open original"
+  },
+  "timeline": {
+    "heading": "Activity",
+    "empty": "No activity yet."
+  },
+  "users": {
+    "title": "Users",
+    "add": "Add user",
+    "addDescription": "Share the username and password with the tester yourself.",
+    "username": "Username",
+    "name": "Name",
+    "role": "Role",
+    "created": "Created",
+    "actions": "Actions",
+    "admin": "Admin",
+    "tester": "Tester",
+    "password": "Password",
+    "passwordHint": "At least 10 characters.",
+    "cancel": "Cancel",
+    "create": "Create user",
+    "userCreated": "User created.",
+    "setPassword": "Set password",
+    "setPasswordDescription": "Choose a new password for {username}.",
+    "newPassword": "New password",
+    "passwordUpdated": "Password updated.",
+    "delete": "Delete",
+    "deleteTitle": "Delete {username}? Their test history stays.",
+    "deleteDescription": "They will no longer be able to sign in.",
+    "deleted": "Deleted {username}.",
+    "actionsFor": "Actions for {username}"
+  },
+  "cases": {
+    "title": "Test cases",
+    "showArchived": "Show archived",
+    "empty": "No groups yet. Create one, or sync a group file with the CLI.",
+    "noCases": "No test cases in this group.",
+    "count": "{count, plural, one {# test case} other {# test cases}}",
+    "archived": "Archived",
+    "key": "Key",
+    "name": "Title",
+    "description": "Description",
+    "descriptionHint": "Markdown.",
+    "criteria": "Acceptance criteria",
+    "criteriaHint": "One criterion per line.",
+    "reference": "Reference",
+    "referenceHint": "A link or an issue key, optional.",
+    "group": "Group",
+    "status": "Status",
+    "actions": "Actions",
+    "keyHint": "Letters, digits, dots, dashes and underscores. It can't be changed later.",
+    "newGroup": "New group",
+    "newGroupDescription": "Test cases are listed under their group.",
+    "editGroup": "Edit group",
+    "newCase": "New test case",
+    "newCaseDescription": "Adds a test case to {group}.",
+    "editCase": "Edit test case",
+    "editCaseDescription": "Changing the title, description or criteria of a tested case flags it as changed.",
+    "loading": "Loading…",
+    "edit": "Edit",
+    "moveUp": "Move up",
+    "moveDown": "Move down",
+    "archive": "Archive",
+    "restore": "Restore",
+    "cancel": "Cancel",
+    "create": "Create",
+    "save": "Save",
+    "groupCreated": "Group created.",
+    "caseCreated": "Test case created.",
+    "saved": "Saved.",
+    "archivedKey": "Archived {key}.",
+    "restoredKey": "Restored {key}.",
+    "actionsFor": "Actions for {key}"
+  },
+  "errors": {
+    "generic": "Something went wrong. Try again.",
+    "notAllowed": "This change is not allowed.",
+    "storyNotFound": "Story not found.",
+    "storyArchived": "This story is no longer part of the test set.",
+    "staleStatus": "This story was updated by someone else. Reload to see the latest.",
+    "contentChanged": "This test case changed. Reload it to see the new version.",
+    "commentOrFile": "Write a comment or attach a file.",
+    "commentRequired": "A comment is required for this change.",
+    "commentTooLong": "Comment is too long (max {max} characters).",
+    "alreadyHasStatus": "Story already has this status.",
+    "nothingToReview": "Nothing to review.",
+    "attachmentsDisabled": "Attachments are not enabled.",
+    "tooManyFiles": "You can attach at most {max} files.",
+    "fileTooLarge": "File \"{name}\" is larger than 10 MB.",
+    "fileTypeNotAllowed": "File \"{name}\" is not an allowed type.",
+    "usernameRequired": "Username is required.",
+    "nameRequired": "Name is required.",
+    "passwordTooShort": "Password must be at least {min} characters",
+    "cannotDeleteSelf": "You can't delete your own account.",
+    "groupNotFound": "Group not found.",
+    "groupExists": "A group with this key already exists.",
+    "caseNotFound": "Test case not found.",
+    "caseExists": "A test case with this key already exists.",
+    "invalidInput": "Invalid input."
+  }
+}

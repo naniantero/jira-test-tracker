@@ -1,0 +1,23 @@
+# Secrets come from the environment or a gitignored `.env` file next to this file.
+# See .env.example and README.md.
+services:
+  app:
+    build: .
+    image: test-tracker
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT:-4100}:3000"
+    environment:
+      BETTER_AUTH_SECRET: ${BETTER_AUTH_SECRET:?set BETTER_AUTH_SECRET (32+ chars, openssl rand -base64 32)}
+      BETTER_AUTH_URL: ${BETTER_AUTH_URL:?set BETTER_AUTH_URL to the public https origin}
+      ADMIN_USERNAME: ${ADMIN_USERNAME:-}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-}
+      # Attachments (README "Attachments"): unset disables them.
+      ATTACHMENTS_BUCKET_URL: ${ATTACHMENTS_BUCKET_URL:-}
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID:-}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY:-}
+    volumes:
+      - data:/data
+
+volumes:
+  data:

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "group": {
+    "key": "PROJ-1",
+    "title": "Ordering"
+  },
+  "cases": [
+    {
+      "key": "PROJ-11",
+      "title": "Edit cart",
+      "description": "As a customer I want to change quantities in my cart so that I order exactly what I need.",
+      "acceptanceCriteria": [
+        "Quantity can be increased and decreased",
+        "Setting quantity to 0 removes the product",
+        "The total updates immediately"
+      ],
+      "reference": "https://example.invalid/browse/PROJ-11"
+    },
+    {
+      "key": "PROJ-12",
+      "title": "Pay by card",
+      "description": "As a customer I want to pay with a card so that my order is confirmed right away.",
+      "acceptanceCriteria": ["Visa and Mastercard are accepted", "A declined card shows a clear message"]
+    }
+  ]
+}

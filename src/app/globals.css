@@ -1,0 +1,168 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-header: var(--header);
+  --color-header-foreground: var(--header-foreground);
+  --color-link: var(--link);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-status-untested: var(--status-untested);
+  --color-status-untested-soft: var(--status-untested-soft);
+  --color-status-passed: var(--status-passed);
+  --color-status-passed-soft: var(--status-passed-soft);
+  --color-status-failed: var(--status-failed);
+  --color-status-failed-soft: var(--status-failed-soft);
+  --color-status-retest: var(--status-retest);
+  --color-status-retest-soft: var(--status-retest-soft);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  /* Grey sunken canvas, white surfaces, navy text, blue accent. */
+  --canvas: #f7f8f9;
+  /* The header renders with `.dark`, so its contents take the dark tokens on top of this. */
+  --header: #0747a6;
+  --header-foreground: #ffffff;
+  --link: #0c66e4;
+  --background: #ffffff;
+  --foreground: #172b4d;
+  --card: #ffffff;
+  --card-foreground: #172b4d;
+  --popover: #ffffff;
+  --popover-foreground: #172b4d;
+  --primary: #0c66e4;
+  --primary-foreground: #ffffff;
+  --secondary: #f1f2f4;
+  --secondary-foreground: #44546f;
+  --muted: #f1f2f4;
+  --muted-foreground: #626f86;
+  --accent: #f1f2f4;
+  --accent-foreground: #172b4d;
+  --destructive: #c9372c;
+  --border: #dcdfe4;
+  --input: #8590a2;
+  --ring: #388bff;
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+  /* Story status colours: solid for bars/icons, soft (same hue, pale) for badge fills. */
+  --status-untested: var(--muted-foreground);
+  --status-untested-soft: var(--muted);
+  --status-passed: #22a06b;
+  --status-passed-soft: #dcfff1;
+  --status-failed: #e56910;
+  --status-failed-soft: #fff3eb;
+  --status-retest: #1d7afc;
+  --status-retest-soft: #e9f2ff;
+}
+
+/* Dark theme; the translucent neutrals also read on the blue header. */
+.dark {
+  --canvas: #161a1d;
+  --link: #579dff;
+  --background: #1d2125;
+  --foreground: #dee4ea;
+  --card: #1d2125;
+  --card-foreground: #dee4ea;
+  --popover: #282e33;
+  --popover-foreground: #dee4ea;
+  --primary: #cce0ff;
+  --primary-foreground: #09326c;
+  --secondary: oklch(1 0 0 / 12%);
+  --secondary-foreground: #dee4ea;
+  --muted: oklch(1 0 0 / 10%);
+  --muted-foreground: #b6c2cf;
+  --accent: oklch(1 0 0 / 4%);
+  --accent-foreground: #dee4ea;
+  --destructive: #f87168;
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 18%);
+  --ring: #85b8ff;
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+  --status-untested: var(--muted-foreground);
+  --status-untested-soft: var(--muted);
+  --status-passed: #2abb7f;
+  --status-passed-soft: #164b35;
+  --status-failed: #fea362;
+  --status-failed-soft: #702e00;
+  --status-retest: #579dff;
+  --status-retest-soft: #09326c;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-canvas text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}

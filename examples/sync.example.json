@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "group": {
+    "key": "login",
+    "title": "Kirjautuminen",
+    "description": "Käyttäjän kirjautuminen ja tunnuksen lukitus."
+  },
+  "cases": [
+    {
+      "key": "LOGIN-01",
+      "title": "Väärä salasana lukitsee tunnuksen viidennellä yrityksellä",
+      "description": "**Esiehto:** käyttäjällä on aktiivinen tunnus.\n\n1. Avaa kirjautumissivu.\n2. Syötä oikea käyttäjätunnus ja väärä salasana viisi kertaa peräkkäin.\n\n**Odotettu tulos:** tunnus lukitaan ja käyttäjälle näytetään virheviesti.",
+      "acceptanceCriteria": ["Viides väärä yritys lukitsee tunnuksen", "Lukitus näkyy virheviestinä"],
+      "reference": "PROJ-1035"
+    },
+    {
+      "key": "LOGIN-02",
+      "title": "Oikea salasana kirjaa käyttäjän sisään",
+      "description": "1. Avaa kirjautumissivu.\n2. Syötä oikea käyttäjätunnus ja salasana.\n\n**Odotettu tulos:** käyttäjä ohjataan etusivulle.",
+      "acceptanceCriteria": ["Käyttäjä ohjataan etusivulle"]
+    },
+    {
+      "key": "LOGIN-03",
+      "title": "Uloskirjautuminen päättää istunnon",
+      "description": "1. Kirjaudu sisään.\n2. Valitse Kirjaudu ulos.\n3. Yritä palata edelliselle sivulle selaimen takaisin-painikkeella.",
+      "acceptanceCriteria": ["Istunto päättyy", "Takaisin-painike ei näytä suojattua sisältöä"],
+      "reference": "https://example.com/wiki/login"
+    }
+  ]
+}

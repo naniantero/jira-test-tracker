@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "group": {
+    "key": "PROJ-2",
+    "title": "Account"
+  },
+  "cases": [
+    {
+      "key": "PROJ-21",
+      "title": "Sign up",
+      "acceptanceCriteria": ["Sign up needs an email address and a password"]
+    },
+    {
+      "key": "PROJ-22",
+      "title": "Reset password",
+      "reference": "PROJ-1035"
+    },
+    {
+      "key": "PROJ-23",
+      "title": "Change email",
+      "description": "Signed-in users can change their email address."
+    }
+  ]
+}
